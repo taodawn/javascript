@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Directed Graph Editor</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+
+  <body>
+
+    <div>
+      <label for="source">Source:</label><input type="text" name="source" id=source value="" autocomplete="on"/><br />
+      <label for="dest">Dest:</label><input type="text" name="dest" id=dest value="" /><br />
+      <input type="button" value="OK" onclick="search()"/><input type="button" value="reset" onclick="window.location.reload()" />
+    </div>
+  </body>
+
+  <script src="http://d3js.org/d3.v5.min.js"></script>
+  <script src="app.js"></script>
+</html>
