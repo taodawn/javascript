@@ -4,8 +4,20 @@
       <v-card>
         <v-card-actions>
           <v-select :items="items" v-model="size" label="Size"></v-select>
-          <v-spacer></v-spacer>
         </v-card-actions>
+
+        <v-container v-bind="{[`gird-list-${size}`]: true}" fluid>
+          <v-layout row wrap>
+            <v-flex v-for="n in 9" :key="n" xs4>
+              <v-card>
+                <v-img
+                  :src="`https://unsplash.it/150/300?image=${Math.floor(Math.random() * 100) + 1 }`"
+                  height="150px"
+                ></v-img>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
       </v-card>
     </v-flex>
   </v-layout>

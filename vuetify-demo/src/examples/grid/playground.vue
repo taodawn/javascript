@@ -37,16 +37,28 @@
               <v-radio-group v-model="flexDirection">
                 <v-checkbox label="reverse" v-model="reverse" hide-details></v-checkbox>
                 <v-checkbox label="fill-height" v-model="fillHeight" hide-details></v-checkbox>
+                <v-radio
+                  v-for="n in flexDirectionAvailable"
+                  :key="n"
+                  :label="n === '' ? 'Nothing' : n"
+                  :value="n"
+                ></v-radio>
               </v-radio-group>
             </v-layout>
           </v-flex>
         </v-layout>
       </v-flex>
+      <!-- <v-flex xs12>
+        <h5>Output:</h5>
+        <markup>{{ formatAttributes(layoutAttributes) }}</markup>
+      </v-flex> -->
     </v-layout>
   </v-container>
 </template>
 <script>
+// import Markup from "../../components/doc/Markup";
 export default {
+//   components: { Markup },
   data() {
     return {
       alignmentsAvailable: [

@@ -12,19 +12,19 @@
     </v-toolbar>
 
     <v-content>
-      <baseline/> 
+      <ratios/> 
     </v-content>
   </v-app>
 </template>
 
 <script>
 
-import baseline from "./examples/layouts/baseline" 
+import ratios from "./examples/aspect-ratios/ratios" 
 
 export default {
   name: "App",
   components: { 
-    baseline
+    ratios
   },
   data() {
     return {

@@ -12,19 +12,22 @@
     </v-toolbar>
 
     <v-content>
-      <baseline/> 
+      <usage/>
+      <subheader/>
     </v-content>
   </v-app>
 </template>
 
 <script>
 
-import baseline from "./examples/layouts/baseline" 
+import usage from "./examples/grid-lists/usage"
+import subheader from "./examples/grid-lists/subheader"
 
 export default {
   name: "App",
-  components: { 
-    baseline
+  components: {
+    usage,
+    subheader
   },
   data() {
     return {
