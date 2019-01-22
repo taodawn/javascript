@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import './plugins/vuetify'
 // import App from './App.vue'
-import App from './examples/layouts/dark'
+import App from './examples/layouts/googleKeep'
 
 Vue.config.productionTip = false
 
